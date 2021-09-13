@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "awsglue"
+version = "1.0.0"
+description = "AWS Glue Python package for local development"
+authors = ["Machiel Keizer Groeneveld"]
+license = "GPL-3.0-or-later"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+
+[tool.poetry.dev-dependencies]
+pyspark = "3.1.1"
+sparkle-test = "^1.1.0"
+pytest = "^6.0.2"
+flakehell = "^0.6.1"
+pytest-parallel = "^0.1.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --disable-warnings"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "awsglue"
+name = "awsglue3"
 version = "1.0.0"
 description = "AWS Glue Python package for local development"
 authors = ["Machiel Keizer Groeneveld"]
